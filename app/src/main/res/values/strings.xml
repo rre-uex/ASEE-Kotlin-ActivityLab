@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ActivityLabKotlin</string>
+
+    <string name="onCreate">onCreate(): 0</string>
+    <string name="onStart">onStart(): 0</string>
+    <string name="onResume">onResume(): 0</string>
+    <string name="onRestart">onRestart(): 0</string>
+    <string name="onPause">onPause(): 0</string>
+    <string name="onStop">onStop(): 0</string>
+
+    <string name="button">Start Activity Two</string>
+    <string name="title_activity_activity_two">Activity Two</string>
+    <string name="close">Close Activity</string>
+
+</resources>
