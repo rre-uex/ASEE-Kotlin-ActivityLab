@@ -10,44 +10,71 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView android:id="@+id/create"
+        <TextView
+            android:id="@+id/create"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onCreate" />
+            android:paddingVertical="5dp"
+            android:text="@string/onCreate"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <TextView android:id="@+id/start"
+        <TextView
+            android:id="@+id/start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onStart" />
+            android:paddingVertical="5dp"
+            android:text="@string/onStart"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <TextView android:id="@+id/resume"
+        <TextView
+            android:id="@+id/resume"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onResume" />
+            android:paddingVertical="5dp"
+            android:text="@string/onResume"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <TextView android:id="@+id/restart"
+        <TextView
+            android:id="@+id/restart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onRestart" />
+            android:paddingVertical="5dp"
+            android:text="@string/onRestart"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <TextView android:id="@+id/pause"
+        <TextView
+            android:id="@+id/pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onPause" />
+            android:paddingVertical="5dp"
+            android:text="@string/onPause"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <TextView android:id="@+id/stop"
+        <TextView
+            android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onStop" />
+            android:paddingVertical="5dp"
+            android:text="@string/onStop"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <Button android:id="@+id/bLaunchActivityTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
             android:text="@string/button" />
 
     </LinearLayout>

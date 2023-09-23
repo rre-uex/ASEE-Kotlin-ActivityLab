@@ -30,12 +30,12 @@ class ActivityOne : AppCompatActivity() {
     private var mStop = 0
 
     // etiquetas de la IU para mostrar contadores
-    private var mTvCreate: TextView? = null
-    private var mTvRestart: TextView? = null
-    private var mTvStart: TextView? = null
-    private var mTvResume: TextView? = null
-    private var mTvPause: TextView? = null
-    private var mTvStop: TextView? = null
+    private lateinit var mTvCreate: TextView
+    private lateinit var mTvRestart: TextView
+    private lateinit var mTvStart: TextView
+    private lateinit var mTvResume: TextView
+    private lateinit var mTvPause: TextView
+    private lateinit var mTvStop: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -116,11 +116,11 @@ class ActivityOne : AppCompatActivity() {
 
     // Actualizar IU con valor de contadores (estado Activity)
     fun mostrarContadores() {
-        mTvCreate!!.text = "onCreate(): $mCreate"
-        mTvStart!!.text = "onStart(): $mStart"
-        mTvResume!!.text = "onResume(): $mResume"
-        mTvRestart!!.text = "onRestart(): $mRestart"
-        mTvPause!!.text = "onPause(): $mPause"
-        mTvStop!!.text = "onStop(): $mStop"
+        mTvCreate.text = "onCreate(): $mCreate"
+        mTvStart.text = "onStart(): $mStart"
+        mTvResume.text = "onResume(): $mResume"
+        mTvRestart.text = "onRestart(): $mRestart"
+        mTvPause.text = "onPause(): $mPause"
+        mTvStop.text = "onStop(): $mStop"
     }
 }

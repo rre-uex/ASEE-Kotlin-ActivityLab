@@ -25,10 +25,10 @@ class ActivityTwo : AppCompatActivity() {
     private var mResume: Short = 0
 
     // etiquetas de la IU para mostrar contadores
-    var mTvCreate: TextView? = null
-    var mTvRestart: TextView? = null
-    var mTvStart: TextView? = null
-    var mTvResume: TextView? = null
+    private lateinit var mTvCreate: TextView
+    private lateinit var mTvRestart: TextView
+    private lateinit var mTvStart: TextView
+    private lateinit var mTvResume: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,9 +102,9 @@ class ActivityTwo : AppCompatActivity() {
 
     // Actualizar IU con valor de contadores (estado Activity)
     fun mostrarContadores() {
-        mTvCreate!!.text = "onCreate(): $mCreate"
-        mTvStart!!.text = "onStart(): $mStart"
-        mTvResume!!.text = "onResume(): $mResume"
-        mTvRestart!!.text = "onRestart(): $mRestart"
+        mTvCreate.text = "onCreate(): $mCreate"
+        mTvStart.text = "onStart(): $mStart"
+        mTvResume.text = "onResume(): $mResume"
+        mTvRestart.text = "onRestart(): $mRestart"
     }
 }
